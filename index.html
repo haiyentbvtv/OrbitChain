@@ -1,0 +1,420 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>OrbitChain Finance</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+
+<body>
+
+<header>
+
+  <nav class="navbar">
+
+    <div class="logo">
+      OrbitChain
+    </div>
+
+    <ul class="nav-menu">
+
+      <li><a href="#protocol">Protocol</a></li>
+      <li><a href="#ecosystem">Ecosystem</a></li>
+      <li><a href="#technology">Technology</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#developers">Developers</a></li>
+
+    </ul>
+
+    <button id="connectBtn">
+      Connect Wallet
+    </button>
+
+  </nav>
+
+</header>
+
+<section class="hero" id="protocol">
+
+  <div class="hero-content">
+
+    <div class="status-badge">
+      POWERING NEXT-GENERATION WEB3 INFRASTRUCTURE
+    </div>
+
+    <h1>
+      Cross-Chain DeFi
+      Infrastructure for
+      <span>The Open Financial Future</span>
+    </h1>
+
+    <p>
+      OrbitChain Finance delivers decentralized liquidity,
+      institutional staking,
+      scalable blockchain interoperability,
+      and AI-powered analytics for modern Web3 ecosystems.
+    </p>
+
+    <div class="hero-buttons">
+
+      <button class="primary-btn">
+        Launch App
+      </button>
+
+      <button class="secondary-btn">
+        Explore Docs
+      </button>
+
+    </div>
+
+    <div class="wallet-box">
+
+      <p id="walletAddress">
+        Wallet Not Connected
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="overview">
+
+  <div class="overview-card">
+    <h2>$5.4B+</h2>
+    <p>Total Value Locked</p>
+  </div>
+
+  <div class="overview-card">
+    <h2>720K+</h2>
+    <p>Active Wallets</p>
+  </div>
+
+  <div class="overview-card">
+    <h2>64+</h2>
+    <p>Supported Networks</p>
+  </div>
+
+  <div class="overview-card">
+    <h2>0.19s</h2>
+    <p>Transaction Finality</p>
+  </div>
+
+</section>
+
+<section class="why-section" id="technology">
+
+  <div class="section-title">
+    <h2>Why OrbitChain Finance?</h2>
+  </div>
+
+  <div class="why-grid">
+
+    <div class="why-card">
+
+      <h3>AI-Powered Liquidity</h3>
+
+      <p>
+        Intelligent liquidity routing algorithms optimize
+        cross-chain asset execution with low slippage
+        and enhanced capital efficiency.
+      </p>
+
+    </div>
+
+    <div class="why-card">
+
+      <h3>Institutional Security</h3>
+
+      <p>
+        Advanced smart contract architecture,
+        decentralized validators,
+        and multi-signature treasury protection.
+      </p>
+
+    </div>
+
+    <div class="why-card">
+
+      <h3>Scalable Infrastructure</h3>
+
+      <p>
+        OrbitChain enables scalable decentralized finance
+        infrastructure across Layer 1 and Layer 2 ecosystems.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="features" id="ecosystem">
+
+  <div class="feature-box">
+
+    <div class="feature-icon">
+      🌐
+    </div>
+
+    <h3>
+      Cross-Chain Ecosystem
+    </h3>
+
+    <p>
+      Unified liquidity infrastructure connecting Ethereum,
+      Arbitrum, Base, Optimism,
+      Solana, and next-generation networks.
+    </p>
+
+  </div>
+
+  <div class="feature-box">
+
+    <div class="feature-icon">
+      🔐
+    </div>
+
+    <h3>
+      Decentralized Security
+    </h3>
+
+    <p>
+      Secure multi-layer blockchain architecture
+      with audited smart contracts
+      and decentralized validator systems.
+    </p>
+
+  </div>
+
+  <div class="feature-box">
+
+    <div class="feature-icon">
+      ⚡
+    </div>
+
+    <h3>
+      Ultra-Fast Execution
+    </h3>
+
+    <p>
+      High-throughput infrastructure delivering
+      near-instant blockchain settlement
+      and scalable decentralized execution.
+    </p>
+
+  </div>
+
+</section>
+
+<section class="how-section">
+
+  <div class="section-title">
+    <h2>How OrbitChain Works</h2>
+  </div>
+
+  <div class="how-grid">
+
+    <div class="how-card">
+
+      <span>01</span>
+
+      <h3>Connect Wallet</h3>
+
+      <p>
+        Users connect MetaMask
+        and supported Web3 wallets
+        to access decentralized services.
+      </p>
+
+    </div>
+
+    <div class="how-card">
+
+      <span>02</span>
+
+      <h3>Bridge Assets</h3>
+
+      <p>
+        Assets move seamlessly across
+        multiple blockchain ecosystems
+        through OrbitChain interoperability layers.
+      </p>
+
+    </div>
+
+    <div class="how-card">
+
+      <span>03</span>
+
+      <h3>Stake & Earn</h3>
+
+      <p>
+        Stake assets to secure the protocol
+        and earn ecosystem incentives,
+        governance rewards,
+        and staking yield.
+      </p>
+
+    </div>
+
+    <div class="how-card">
+
+      <span>04</span>
+
+      <h3>Governance Participation</h3>
+
+      <p>
+        Token holders participate in DAO governance,
+        treasury proposals,
+        and protocol upgrades.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="token-section">
+
+  <div class="section-title">
+    <h2>OrbitChain Token Utility</h2>
+  </div>
+
+  <div class="token-grid">
+
+    <div class="token-card">
+      Governance Voting
+    </div>
+
+    <div class="token-card">
+      Staking Rewards
+    </div>
+
+    <div class="token-card">
+      Liquidity Incentives
+    </div>
+
+    <div class="token-card">
+      Treasury Participation
+    </div>
+
+    <div class="token-card">
+      Validator Incentives
+    </div>
+
+    <div class="token-card">
+      Reduced Protocol Fees
+    </div>
+
+  </div>
+
+</section>
+
+<section class="roadmap" id="roadmap">
+
+  <h2>
+    Development Roadmap
+  </h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+
+      <h3>Q4 2025</h3>
+
+      <p>
+        Core protocol launch,
+        validator onboarding,
+        and wallet infrastructure deployment.
+      </p>
+
+    </div>
+
+    <div class="timeline-item">
+
+      <h3>Q1 2026</h3>
+
+      <p>
+        Governance framework,
+        staking vaults,
+        and institutional liquidity infrastructure.
+      </p>
+
+    </div>
+
+    <div class="timeline-item">
+
+      <h3>Q2 2026</h3>
+
+      <p>
+        Cross-chain bridge deployment,
+        ecosystem expansion,
+        and DAO treasury implementation.
+      </p>
+
+    </div>
+
+    <div class="timeline-item">
+
+      <h3>2027+</h3>
+
+      <p>
+        AI-powered analytics,
+        institutional DeFi marketplace,
+        and global decentralized finance infrastructure.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="developer-section" id="developers">
+
+  <div class="section-title">
+    <h2>Developer Ecosystem</h2>
+  </div>
+
+  <p class="developer-text">
+    OrbitChain provides APIs,
+    SDKs,
+    modular smart contract tooling,
+    and scalable decentralized infrastructure
+    for developers building next-generation Web3 applications.
+  </p>
+
+</section>
+
+<footer>
+
+  <div class="footer-logo">
+    OrbitChain Finance
+  </div>
+
+  <div class="footer-links">
+
+    <a href="#">GitHub</a>
+    <a href="#">Discord</a>
+    <a href="#">Twitter</a>
+    <a href="#">Documentation</a>
+
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
